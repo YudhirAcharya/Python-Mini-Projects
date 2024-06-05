@@ -1,6 +1,6 @@
 #python banking program
 
-def show_balance():
+def show_balance(balance):
     print(f"Your balance is ${balance: .2f}")
 
 
@@ -14,7 +14,7 @@ def deposit():
         return amount
 
 
-def withdraw():
+def withdraw(balance):
     amount = float(input("Enter an amount to be withdrawn: "))
 
     if amount > balance:
